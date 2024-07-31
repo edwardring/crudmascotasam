@@ -4,11 +4,12 @@ const port = 3000
 
 /* conexion a la base de datos mongodb cloud */
 const mongoose = require('mongoose');
-const usuario = 'full_stack_6am';
-const password = 'qN31Xm7cm8AdjYNZ';
-const dbName = 'mascotas';
 
-const uri = `mongodb+srv://${usuario}:${password}@cluster0.zpgqwwo.mongodb.net/${dbName}?retryWrites=true&w=majority&appName=Cluster0`
+const usuario = "full_stack_6pm";
+const password = "VeKkaFOEzuitO0qy";
+const dbName = "veterinaria";
+const uri = `mongodb+srv://${usuario}:${password}@cluster0.zpgqwwo.mongodb.net/${dbName}?retryWrites=true&w=majority&appName=Cluster0`;
+
 mongoose.connect(uri)
   .then(()=> console.log('conectado a MongoDB')) 
   .catch(e=> console.log('error de conexión a MongoDB', e))
